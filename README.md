@@ -1,5 +1,5 @@
 # Rubiks-Cube-Scrambler-and-Timer
-Program for generating random Rubik's Cube Scrambles as well as a timer functionality to track your solving speeds.
+Java Program for generating random Rubik's Cube Scrambles as well as a timer functionality to track your solving speeds.
 
 SCRAMBLE LOGIC
 
