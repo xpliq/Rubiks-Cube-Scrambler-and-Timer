@@ -33,18 +33,22 @@ SCRAMBLE LOGIC
            -R' therefore can not be repeated as a result
   
   --==+Determining the Face+==--
+  
   Below I have a table of all "remainder" operations from 1-6. Credit to mrxuso for the logic
-  1 2 3 4 5 6
-  0 0 0 0 0 0 - %1
-  1 0 1 0 1 0 - %2
-  1 2 0 1 2 0 - %3 *We will use this
-  1 2 3 0 1 2 - %4
-  1 2 3 4 0 1 - %5
-  1 2 3 4 5 0 - %6
+  
+    1 2 3 4 5 6
+    0 0 0 0 0 0 - %1
+    1 0 1 0 1 0 - %2
+    1 2 0 1 2 0 - %3 *We will use this
+    1 2 3 0 1 2 - %4
+    1 2 3 4 0 1 - %5
+    1 2 3 4 5 0 - %6
+  
   We use %3 because there are enough unique combonations to each "face" and "back".
   This means we have to organize our notations in a specific order
   
   --Notation Order--
+  
        1 - Rights
        2 - Ups
        3 - Fronts
