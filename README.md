@@ -8,17 +8,20 @@ SCRAMBLE LOGIC
  Notation can't repeat twice
   
  When a notation is generated. We assign it as the "face"
+ 
        - This means that this "face" is going to have a special property
        - As a "face" piece is moved, it's adjacent notations can be moved without creating a "pointless" move.
            -This means, if 'R' was a move, U, D, F, and B are all valid moves. L is not, as it's opposite of R's "face"
        - Once the "face" has been declared, the opposite notation can not be called, as it will be the "back" of that generated notation 
   
    "face" Correspondance
-   R <-> L
-   U <-> D
-   F <-> B
+   
+    R <-> L
+    U <-> D
+    F <-> B
   
   Examples:
+  
        R U R' - valid b/c
            -R is the face
            -U is adjacent to R
@@ -51,6 +54,7 @@ SCRAMBLE LOGIC
   Using this notation order, we can use the %3 method to compare the values for no repitition 
   
   In Cubing Terms
+  
        If we were to rotate a side on a cube, and follow that up with a move that is adjacent to the cube, it is safe to
        rotate that same side again because that side is now in a different state than what is was originally. The reason
        we can't continue the scramble if the opposite notation was followed is because, you would be performing an
@@ -58,16 +62,19 @@ SCRAMBLE LOGIC
        to consider the potential of these pointless turns.
   
   --==+Notations+==--
+  
    //N2 will be added twice since it's probability is more likely than the rest
-  rights : R, R', R2, R2
-  lefts : L, L', L2, L2
-  ups : U, U', U2, U2
-  downs : D, D', D2, D2
-  fronts : F, F', F2, F2
-  backs : B, B', B2, B2
+   
+   rights : R, R', R2, R2
+   lefts : L, L', L2, L2
+   ups : U, U', U2, U2
+   downs : D, D', D2, D2
+   fronts : F, F', F2, F2
+   backs : B, B', B2, B2
   
   
   --==+Algorithm+==--
+  
   1. Call for a new scramble with declared length
   2. Declare scramble array with default length 25
   3. Declare notations within a 2D array.
